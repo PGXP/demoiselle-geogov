@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Nodes.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Demoiselle JEE GEOGOV</a> &gt; <a href="index.source.html" class="el_package">org.demoiselle.jee.geogov.entity</a> &gt; <span class="el_source">Nodes.java</span></div><h1>Nodes.java</h1><pre class="source lang-java linenums">package org.demoiselle.jee.geogov.entity;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.logging.Logger;
+import static java.util.logging.Logger.getLogger;
+
+/**
+ *
+ * @author 70744416353
+ */
+public class Nodes implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+<span class="nc" id="L15">    private static final Logger LOG = getLogger(Nodes.class.getName());</span>
+
+    private Long id;
+    private Integer vrs;
+    private Date tstamp;
+    private String description;
+    private String group;
+    private String geojson;
+    private String tags;
+
+    /**
+     *
+     */
+<span class="nc" id="L28">    public Nodes() {</span>
+<span class="nc" id="L29">    }</span>
+
+    /**
+     *
+     * @param id
+     */
+<span class="nc" id="L35">    public Nodes(Long id) {</span>
+<span class="nc" id="L36">        this.id = id;</span>
+<span class="nc" id="L37">    }</span>
+
+    /**
+     *
+     * @return
+     */
+    public Long getId() {
+<span class="nc" id="L44">        return id;</span>
+    }
+
+    /**
+     *
+     * @param id
+     */
+    public void setId(Long id) {
+<span class="nc" id="L52">        this.id = id;</span>
+<span class="nc" id="L53">    }</span>
+
+    /**
+     *
+     * @return
+     */
+    public String getGroup() {
+<span class="nc" id="L60">        return group;</span>
+    }
+
+    /**
+     *
+     * @param group
+     */
+    public void setGroup(String group) {
+<span class="nc" id="L68">        this.group = group;</span>
+<span class="nc" id="L69">    }</span>
+
+    /**
+     *
+     * @return
+     */
+    public String getDescription() {
+<span class="nc" id="L76">        return description;</span>
+    }
+
+    /**
+     *
+     * @param description
+     */
+    public void setDescription(String description) {
+<span class="nc" id="L84">        this.description = description;</span>
+<span class="nc" id="L85">    }</span>
+
+    /**
+     *
+     * @return
+     */
+    public Integer getVrs() {
+<span class="nc" id="L92">        return vrs;</span>
+    }
+
+    /**
+     *
+     * @param vrs
+     */
+    public void setVrs(Integer vrs) {
+<span class="nc" id="L100">        this.vrs = vrs;</span>
+<span class="nc" id="L101">    }</span>
+
+    /**
+     *
+     * @return
+     */
+    public Date getTstamp() {
+<span class="nc" id="L108">        return tstamp;</span>
+    }
+
+    /**
+     *
+     * @param tstamp
+     */
+    public void setTstamp(Date tstamp) {
+<span class="nc" id="L116">        this.tstamp = tstamp;</span>
+<span class="nc" id="L117">    }</span>
+
+    /**
+     *
+     * @return
+     */
+    public String getGeojson() {
+<span class="nc" id="L124">        return geojson;</span>
+    }
+
+    /**
+     *
+     * @param geojson
+     */
+    public void setGeojson(String geojson) {
+<span class="nc" id="L132">        this.geojson = geojson;</span>
+<span class="nc" id="L133">    }</span>
+
+    /**
+     *
+     * @return
+     */
+    public String getTags() {
+<span class="nc" id="L140">        return tags;</span>
+    }
+
+    /**
+     *
+     * @param tags
+     */
+    public void setTags(String tags) {
+<span class="nc" id="L148">        this.tags = tags;</span>
+<span class="nc" id="L149">    }</span>
+
+    /**
+     *
+     * @param object
+     * @return
+     */
+    @Override
+    public boolean equals(Object object) {
+        // TODO: Warning - this method won't work in the case the id fields are not set
+<span class="nc bnc" id="L159" title="All 2 branches missed.">        if (!(object instanceof Nodes)) {</span>
+<span class="nc" id="L160">            return false;</span>
+        }
+<span class="nc" id="L162">        Nodes other = (Nodes) object;</span>
+<span class="nc bnc" id="L163" title="All 8 branches missed.">        return !((this.id == null &amp;&amp; other.id != null) || (this.id != null &amp;&amp; !this.id.equals(other.id)));</span>
+    }
+
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+<span class="nc" id="L172">        return &quot;org.demoiselle.geo.entity.Nodes[ id=&quot; + id + &quot; ]&quot;;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
