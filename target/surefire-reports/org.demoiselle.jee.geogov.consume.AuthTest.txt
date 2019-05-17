@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.demoiselle.jee.geogov.consume.AuthTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.789 sec <<< FAILURE!
-testLogin(org.demoiselle.jee.geogov.consume.AuthTest)  Time elapsed: 3.966 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.889 sec <<< FAILURE!
+testLogin(org.demoiselle.jee.geogov.consume.AuthTest)  Time elapsed: 1.194 sec  <<< ERROR!
 java.lang.NullPointerException
 	at org.demoiselle.jee.geogov.consume.AuthTest.testLogin(AuthTest.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

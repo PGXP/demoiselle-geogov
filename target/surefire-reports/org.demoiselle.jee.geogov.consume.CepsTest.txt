@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.demoiselle.jee.geogov.consume.CepsTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.464 sec <<< FAILURE!
-testGeocep(org.demoiselle.jee.geogov.consume.CepsTest)  Time elapsed: 0.1 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.53 sec <<< FAILURE!
+testGeocep(org.demoiselle.jee.geogov.consume.CepsTest)  Time elapsed: 0.08 sec  <<< ERROR!
 org.demoiselle.jee.core.exception.DemoiselleException: Serviço indisponível
 	at org.demoiselle.jee.geogov.consume.Ceps.geocep(Ceps.java:42)
 	at org.demoiselle.jee.geogov.consume.CepsTest.testGeocep(CepsTest.java:68)

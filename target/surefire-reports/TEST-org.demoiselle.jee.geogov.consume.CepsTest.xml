@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="org.demoiselle.jee.geogov.consume.CepsTest" time="0.1" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="org.demoiselle.jee.geogov.consume.CepsTest" time="0.08" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.demoiselle.jee.geogov.consume.CepsTest" name="testGeocep" time="0.1">
+  <testcase classname="org.demoiselle.jee.geogov.consume.CepsTest" name="testGeocep" time="0.08">
     <error message="Serviço indisponível" type="org.demoiselle.jee.core.exception.DemoiselleException">org.demoiselle.jee.core.exception.DemoiselleException: Serviço indisponível
 	at org.demoiselle.jee.geogov.consume.Ceps.geocep(Ceps.java:42)
 	at org.demoiselle.jee.geogov.consume.CepsTest.testGeocep(CepsTest.java:68)
@@ -104,81 +104,81 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
-    <system-err>mai 17, 2019 3:07:25 PM org.apache.deltaspike.testcontrol.api.junit.CdiTestSuiteRunner$LogRunListener testFailure
+    <system-err>mai 17, 2019 3:11:28 PM org.apache.deltaspike.testcontrol.api.junit.CdiTestSuiteRunner$LogRunListener testFailure
 INFORMAÇÕES: [failed] org.demoiselle.jee.geogov.consume.AuthTest#testLogin message: null
-mai 17, 2019 3:07:25 PM org.apache.deltaspike.testcontrol.api.junit.CdiTestSuiteRunner$LogRunListener testFinished
+mai 17, 2019 3:11:28 PM org.apache.deltaspike.testcontrol.api.junit.CdiTestSuiteRunner$LogRunListener testFinished
 INFORMAÇÕES: [finished] org.demoiselle.jee.geogov.consume.AuthTest#testLogin
-mai 17, 2019 3:07:25 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processShutdown
+mai 17, 2019 3:11:28 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processShutdown
 INFORMAÇÕES: ====================================================
-mai 17, 2019 3:07:25 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processShutdown
+mai 17, 2019 3:11:28 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processShutdown
 INFORMAÇÕES: Demoiselle JEE - Ragnar 3.0.0 in: 21/02/2017 21:41
-mai 17, 2019 3:07:25 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processShutdown
+mai 17, 2019 3:11:28 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processShutdown
 INFORMAÇÕES: Desligando os motores do Demoiselle 3.0.0
-mai 17, 2019 3:07:25 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processShutdown
+mai 17, 2019 3:11:28 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processShutdown
 INFORMAÇÕES: ====================================================
-mai 17, 2019 3:07:26 PM org.jboss.weld.environment.se.WeldContainer shutdown
+mai 17, 2019 3:11:28 PM org.jboss.weld.environment.se.WeldContainer shutdown
 INFO: WELD-ENV-002001: Weld SE container STATIC_INSTANCE shut down
-mai 17, 2019 3:07:26 PM org.apache.deltaspike.core.api.config.PropertyLoader loadAllProperties
+mai 17, 2019 3:11:28 PM org.apache.deltaspike.core.api.config.PropertyLoader loadAllProperties
 INFORMAÇÕES: could not find any property files with name META-INF/apache-deltaspike_test-container
-mai 17, 2019 3:07:26 PM org.jboss.weld.bootstrap.WeldStartup startContainer
+mai 17, 2019 3:11:28 PM org.jboss.weld.bootstrap.WeldStartup startContainer
 INFO: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
-mai 17, 2019 3:07:26 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+mai 17, 2019 3:11:28 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
 INFO: WELD-000411: Observer method [BackedAnnotatedMethod] protected org.apache.deltaspike.core.impl.exclude.extension.ExcludeExtension.vetoBeans(@Observes ProcessAnnotatedType, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-mai 17, 2019 3:07:26 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+mai 17, 2019 3:11:28 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
 INFO: WELD-000411: Observer method [BackedAnnotatedMethod] protected org.demoiselle.jee.core.lifecycle.LifecycleBootstrap.startup(@Observes ProcessAnnotatedType&lt;?&gt;) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-mai 17, 2019 3:07:26 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] protected org.apache.deltaspike.core.impl.interceptor.GlobalInterceptorExtension.promoteInterceptors(@Observes ProcessAnnotatedType, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-mai 17, 2019 3:07:26 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+mai 17, 2019 3:11:28 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
 INFO: WELD-000411: Observer method [BackedAnnotatedMethod] protected org.apache.deltaspike.core.impl.message.MessageBundleExtension.detectInterfaces(@Observes ProcessAnnotatedType) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-mai 17, 2019 3:07:26 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
-INFO: WELD-000119: Not generating any bean definitions from org.apache.deltaspike.testcontrol.impl.jsf.MyFacesContainerAdapter$1 because of underlying class loading error: Type org.apache.myfaces.mc.test.core.runner.MyFacesContainer not found.  If this is unexpected, enable DEBUG logging to see the full error.
-mai 17, 2019 3:07:26 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
+mai 17, 2019 3:11:28 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] protected org.apache.deltaspike.core.impl.interceptor.GlobalInterceptorExtension.promoteInterceptors(@Observes ProcessAnnotatedType, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+mai 17, 2019 3:11:29 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
 INFO: WELD-000119: Not generating any bean definitions from org.apache.deltaspike.testcontrol.impl.jsf.MyFacesContainerAdapter because of underlying class loading error: Type org.apache.myfaces.mc.test.core.runner.MyFacesContainer not found.  If this is unexpected, enable DEBUG logging to see the full error.
-mai 17, 2019 3:07:26 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
-INFO: WELD-000119: Not generating any bean definitions from org.apache.deltaspike.testcontrol.impl.jsf.MockedJsfTestContainerAdapter because of underlying class loading error: Type org.apache.myfaces.test.mock.MockedJsfTestContainer not found.  If this is unexpected, enable DEBUG logging to see the full error.
-mai 17, 2019 3:07:26 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
+mai 17, 2019 3:11:29 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
+INFO: WELD-000119: Not generating any bean definitions from org.apache.deltaspike.testcontrol.impl.jsf.MyFacesContainerAdapter$1 because of underlying class loading error: Type org.apache.myfaces.mc.test.core.runner.MyFacesContainer not found.  If this is unexpected, enable DEBUG logging to see the full error.
+mai 17, 2019 3:11:29 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
 INFO: WELD-000119: Not generating any bean definitions from org.apache.deltaspike.testcontrol.impl.jsf.MockedJsf2TestContainer because of underlying class loading error: Type org.apache.myfaces.test.mock.MockRenderKit not found.  If this is unexpected, enable DEBUG logging to see the full error.
-mai 17, 2019 3:07:26 PM org.jboss.weld.logging.ValidatorLogger$7 log
+mai 17, 2019 3:11:29 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
+INFO: WELD-000119: Not generating any bean definitions from org.apache.deltaspike.testcontrol.impl.jsf.MockedJsfTestContainerAdapter because of underlying class loading error: Type org.apache.myfaces.test.mock.MockedJsfTestContainer not found.  If this is unexpected, enable DEBUG logging to see the full error.
+mai 17, 2019 3:11:29 PM org.jboss.weld.logging.ValidatorLogger$7 log
 WARN: WELD-001478: Interceptor class org.apache.deltaspike.core.impl.throttling.ThrottledInterceptor is enabled for the application and for the bean archive /home/70744416353/.m2/repository/org/apache/deltaspike/core/deltaspike-core-impl/1.7.1/deltaspike-core-impl-1.7.1.jar. It will only be invoked in the @Priority part of the chain.
-mai 17, 2019 3:07:26 PM org.jboss.weld.logging.ValidatorLogger$7 log
+mai 17, 2019 3:11:29 PM org.jboss.weld.logging.ValidatorLogger$7 log
 WARN: WELD-001478: Interceptor class org.apache.deltaspike.core.impl.lock.LockedInterceptor is enabled for the application and for the bean archive /home/70744416353/.m2/repository/org/apache/deltaspike/core/deltaspike-core-impl/1.7.1/deltaspike-core-impl-1.7.1.jar. It will only be invoked in the @Priority part of the chain.
-mai 17, 2019 3:07:26 PM org.jboss.weld.logging.ValidatorLogger$7 log
+mai 17, 2019 3:11:29 PM org.jboss.weld.logging.ValidatorLogger$7 log
 WARN: WELD-001478: Interceptor class org.apache.deltaspike.core.impl.future.FutureableInterceptor is enabled for the application and for the bean archive /home/70744416353/.m2/repository/org/apache/deltaspike/core/deltaspike-core-impl/1.7.1/deltaspike-core-impl-1.7.1.jar. It will only be invoked in the @Priority part of the chain.
-mai 17, 2019 3:07:26 PM org.jboss.weld.environment.se.WeldContainer initialize
+mai 17, 2019 3:11:29 PM org.jboss.weld.environment.se.WeldContainer initialize
 INFO: WELD-ENV-002003: Weld SE container STATIC_INSTANCE initialized
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
 INFORMAÇÕES: ====================================================
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
 INFORMAÇÕES: Ligando turbinas...
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
 INFORMAÇÕES: Demoiselle JEE - Ragnar 3.0.0 in: 21/02/2017 21:41
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
 INFORMAÇÕES: Iniciando o Demoiselle Framework 3.0.0
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
 INFORMAÇÕES: ====================================================
-mai 17, 2019 3:07:26 PM org.apache.deltaspike.testcontrol.api.junit.CdiTestSuiteRunner$LogRunListener testStarted
+mai 17, 2019 3:11:29 PM org.apache.deltaspike.testcontrol.api.junit.CdiTestSuiteRunner$LogRunListener testStarted
 INFORMAÇÕES: [run] org.demoiselle.jee.geogov.consume.CepsTest#testGeocep
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.configuration.ConfigurationLoader processConfiguration
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.configuration.ConfigurationLoader processConfiguration
 INFORMAÇÕES: *******************************************************
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.configuration.ConfigurationLoader processConfiguration
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.configuration.ConfigurationLoader processConfiguration
 INFORMAÇÕES: Carregando a classe de configuração org.demoiselle.jee.geogov.DemoiselleGeoGovConfig
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
 INFORMAÇÕES: -&gt; demoiselle.geogov.username = [valor suprimido pela anotação @ConfigurationSuppressLogger]
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
 INFORMAÇÕES: -&gt; demoiselle.geogov.password = [valor suprimido pela anotação @ConfigurationSuppressLogger]
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
-INFORMAÇÕES: -&gt; demoiselle.geogov.url = https://localhost:8443/geo/
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
+INFORMAÇÕES: -&gt; demoiselle.geogov.url = 
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
 INFORMAÇÕES: -&gt; demoiselle.geogov.disableTrustCerts = true
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
 INFORMAÇÕES: -&gt; demoiselle.geogov.properties = {Accept=application/json, User-Agent=demoiselle-geogov, Charset=utf-8, Content-Type=application/json}
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.geogov.consume.Util doPOST
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.geogov.consume.Util doPOST
 GRAVE: null
-java.io.IOException: Server returned HTTP response code: 500 for URL: https://localhost:8443/geo/api/auth
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1894)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:263)
-	at org.demoiselle.jee.geogov.consume.Util.doPOST(Util.java:144)
+java.net.MalformedURLException: no protocol: api/auth
+	at java.net.URL.&lt;init&gt;(URL.java:593)
+	at java.net.URL.&lt;init&gt;(URL.java:490)
+	at java.net.URL.&lt;init&gt;(URL.java:439)
+	at org.demoiselle.jee.geogov.consume.Util.doPOST(Util.java:119)
 	at org.demoiselle.jee.geogov.consume.Util$Proxy$_$$_WeldClientProxy.doPOST(Unknown Source)
 	at org.demoiselle.jee.geogov.consume.Auth.login(Auth.java:37)
 	at org.demoiselle.jee.geogov.consume.Auth$Proxy$_$$_WeldClientProxy.login(Unknown Source)
@@ -222,13 +222,13 @@ java.io.IOException: Server returned HTTP response code: 500 for URL: https://lo
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-mai 17, 2019 3:07:26 PM org.demoiselle.jee.geogov.consume.Util doGET
+mai 17, 2019 3:11:29 PM org.demoiselle.jee.geogov.consume.Util doGET
 GRAVE: null
-java.io.IOException: Server returned HTTP response code: 500 for URL: https://localhost:8443/geo/api/ceps/geo/80520170
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1894)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:263)
-	at org.demoiselle.jee.geogov.consume.Util.doGET(Util.java:81)
+java.net.MalformedURLException: no protocol: api/ceps/geo/80520170
+	at java.net.URL.&lt;init&gt;(URL.java:593)
+	at java.net.URL.&lt;init&gt;(URL.java:490)
+	at java.net.URL.&lt;init&gt;(URL.java:439)
+	at org.demoiselle.jee.geogov.consume.Util.doGET(Util.java:61)
 	at org.demoiselle.jee.geogov.consume.Util$Proxy$_$$_WeldClientProxy.doGET(Unknown Source)
 	at org.demoiselle.jee.geogov.consume.Ceps.geocep(Ceps.java:35)
 	at org.demoiselle.jee.geogov.consume.CepsTest.testGeocep(CepsTest.java:68)
