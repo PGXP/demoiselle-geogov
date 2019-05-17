@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="org.demoiselle.jee.geogov.consume.AuthTest" time="1.402" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="org.demoiselle.jee.geogov.consume.AuthTest" time="3.966" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -61,5 +61,158 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.demoiselle.jee.geogov.consume.AuthTest" name="testLogin" time="1.402"/>
+  <testcase classname="org.demoiselle.jee.geogov.consume.AuthTest" name="testLogin" time="3.966">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.demoiselle.jee.geogov.consume.AuthTest.testLogin(AuthTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner$ContainerAwareMethodInvoker.invokeMethod(CdiTestRunner.java:346)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner$ContainerAwareMethodInvoker.evaluate(CdiTestRunner.java:318)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner.runChild(CdiTestRunner.java:177)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner.runChild(CdiTestRunner.java:76)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner$BeforeClassStatement.evaluate(CdiTestRunner.java:372)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner$AfterClassStatement.evaluate(CdiTestRunner.java:393)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner.run(CdiTestRunner.java:144)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-err>mai 17, 2019 3:07:18 PM org.apache.deltaspike.core.util.ProjectStageProducer initProjectStage
+INFORMAÇÕES: Computed the following DeltaSpike ProjectStage: Production
+mai 17, 2019 3:07:18 PM org.apache.deltaspike.core.api.config.PropertyLoader loadAllProperties
+INFORMAÇÕES: could not find any property files with name META-INF/apache-deltaspike_test-container
+mai 17, 2019 3:07:18 PM org.jboss.weld.bootstrap.WeldStartup &lt;clinit&gt;
+INFO: WELD-000900: 2.4.0 (Final)
+mai 17, 2019 3:07:19 PM org.jboss.weld.bootstrap.WeldStartup startContainer
+INFO: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+mai 17, 2019 3:07:19 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] protected org.apache.deltaspike.core.impl.exclude.extension.ExcludeExtension.vetoBeans(@Observes ProcessAnnotatedType, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+mai 17, 2019 3:07:19 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] protected org.demoiselle.jee.core.lifecycle.LifecycleBootstrap.startup(@Observes ProcessAnnotatedType&lt;?&gt;) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+mai 17, 2019 3:07:19 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] protected org.apache.deltaspike.core.impl.interceptor.GlobalInterceptorExtension.promoteInterceptors(@Observes ProcessAnnotatedType, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+mai 17, 2019 3:07:19 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] protected org.apache.deltaspike.core.impl.message.MessageBundleExtension.detectInterfaces(@Observes ProcessAnnotatedType) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+mai 17, 2019 3:07:20 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
+INFO: WELD-000119: Not generating any bean definitions from org.apache.deltaspike.testcontrol.impl.jsf.MyFacesContainerAdapter$1 because of underlying class loading error: Type org.apache.myfaces.mc.test.core.runner.MyFacesContainer not found.  If this is unexpected, enable DEBUG logging to see the full error.
+mai 17, 2019 3:07:20 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
+INFO: WELD-000119: Not generating any bean definitions from org.apache.deltaspike.testcontrol.impl.jsf.MyFacesContainerAdapter because of underlying class loading error: Type org.apache.myfaces.mc.test.core.runner.MyFacesContainer not found.  If this is unexpected, enable DEBUG logging to see the full error.
+mai 17, 2019 3:07:20 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
+INFO: WELD-000119: Not generating any bean definitions from org.apache.deltaspike.testcontrol.impl.jsf.MockedJsf2TestContainer because of underlying class loading error: Type org.apache.myfaces.test.mock.MockRenderKit not found.  If this is unexpected, enable DEBUG logging to see the full error.
+mai 17, 2019 3:07:20 PM org.jboss.weld.bootstrap.MissingDependenciesRegistry handleResourceLoadingException
+INFO: WELD-000119: Not generating any bean definitions from org.apache.deltaspike.testcontrol.impl.jsf.MockedJsfTestContainerAdapter because of underlying class loading error: Type org.apache.myfaces.test.mock.MockedJsfTestContainer not found.  If this is unexpected, enable DEBUG logging to see the full error.
+mai 17, 2019 3:07:20 PM org.jboss.weld.logging.ValidatorLogger$7 log
+WARN: WELD-001478: Interceptor class org.apache.deltaspike.core.impl.throttling.ThrottledInterceptor is enabled for the application and for the bean archive /home/70744416353/.m2/repository/org/apache/deltaspike/core/deltaspike-core-impl/1.7.1/deltaspike-core-impl-1.7.1.jar. It will only be invoked in the @Priority part of the chain.
+mai 17, 2019 3:07:20 PM org.jboss.weld.logging.ValidatorLogger$7 log
+WARN: WELD-001478: Interceptor class org.apache.deltaspike.core.impl.lock.LockedInterceptor is enabled for the application and for the bean archive /home/70744416353/.m2/repository/org/apache/deltaspike/core/deltaspike-core-impl/1.7.1/deltaspike-core-impl-1.7.1.jar. It will only be invoked in the @Priority part of the chain.
+mai 17, 2019 3:07:20 PM org.jboss.weld.logging.ValidatorLogger$7 log
+WARN: WELD-001478: Interceptor class org.apache.deltaspike.core.impl.future.FutureableInterceptor is enabled for the application and for the bean archive /home/70744416353/.m2/repository/org/apache/deltaspike/core/deltaspike-core-impl/1.7.1/deltaspike-core-impl-1.7.1.jar. It will only be invoked in the @Priority part of the chain.
+mai 17, 2019 3:07:21 PM org.jboss.weld.environment.se.WeldContainer initialize
+INFO: WELD-ENV-002003: Weld SE container STATIC_INSTANCE initialized
+mai 17, 2019 3:07:21 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
+INFORMAÇÕES: ====================================================
+mai 17, 2019 3:07:21 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
+INFORMAÇÕES: Ligando turbinas...
+mai 17, 2019 3:07:21 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
+INFORMAÇÕES: Demoiselle JEE - Ragnar 3.0.0 in: 21/02/2017 21:41
+mai 17, 2019 3:07:21 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
+INFORMAÇÕES: Iniciando o Demoiselle Framework 3.0.0
+mai 17, 2019 3:07:21 PM org.demoiselle.jee.core.lifecycle.LifecycleBootstrap processStartup
+INFORMAÇÕES: ====================================================
+mai 17, 2019 3:07:21 PM org.apache.deltaspike.testcontrol.api.junit.CdiTestSuiteRunner$LogRunListener testStarted
+INFORMAÇÕES: [run] org.demoiselle.jee.geogov.consume.AuthTest#testLogin
+mai 17, 2019 3:07:21 PM org.demoiselle.jee.configuration.ConfigurationLoader processConfiguration
+INFORMAÇÕES: *******************************************************
+mai 17, 2019 3:07:21 PM org.demoiselle.jee.configuration.ConfigurationLoader processConfiguration
+INFORMAÇÕES: Carregando a classe de configuração org.demoiselle.jee.geogov.DemoiselleGeoGovConfig
+mai 17, 2019 3:07:23 PM org.hibernate.validator.internal.util.Version &lt;clinit&gt;
+INFO: HV000001: Hibernate Validator 5.3.0.Final
+mai 17, 2019 3:07:23 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
+INFORMAÇÕES: -&gt; demoiselle.geogov.username = [valor suprimido pela anotação @ConfigurationSuppressLogger]
+mai 17, 2019 3:07:23 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
+INFORMAÇÕES: -&gt; demoiselle.geogov.password = [valor suprimido pela anotação @ConfigurationSuppressLogger]
+mai 17, 2019 3:07:23 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
+INFORMAÇÕES: -&gt; demoiselle.geogov.url = https://localhost:8443/geo/
+mai 17, 2019 3:07:23 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
+INFORMAÇÕES: -&gt; demoiselle.geogov.disableTrustCerts = true
+mai 17, 2019 3:07:23 PM org.demoiselle.jee.configuration.ConfigurationLoader lambda$printConfiguration$0
+INFORMAÇÕES: -&gt; demoiselle.geogov.properties = {Accept=application/json, User-Agent=demoiselle-geogov, Charset=utf-8, Content-Type=application/json}
+mai 17, 2019 3:07:25 PM org.demoiselle.jee.geogov.consume.Util doPOST
+GRAVE: null
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://localhost:8443/geo/api/auth
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1894)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:263)
+	at org.demoiselle.jee.geogov.consume.Util.doPOST(Util.java:144)
+	at org.demoiselle.jee.geogov.consume.Util$Proxy$_$$_WeldClientProxy.doPOST(Unknown Source)
+	at org.demoiselle.jee.geogov.consume.Auth.login(Auth.java:37)
+	at org.demoiselle.jee.geogov.consume.Auth$Proxy$_$$_WeldClientProxy.login(Unknown Source)
+	at org.demoiselle.jee.geogov.consume.AuthTest.testLogin(AuthTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner$ContainerAwareMethodInvoker.invokeMethod(CdiTestRunner.java:346)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner$ContainerAwareMethodInvoker.evaluate(CdiTestRunner.java:318)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner.runChild(CdiTestRunner.java:177)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner.runChild(CdiTestRunner.java:76)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner$BeforeClassStatement.evaluate(CdiTestRunner.java:372)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner$AfterClassStatement.evaluate(CdiTestRunner.java:393)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.deltaspike.testcontrol.api.junit.CdiTestRunner.run(CdiTestRunner.java:144)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+</system-err>
+  </testcase>
 </testsuite>
