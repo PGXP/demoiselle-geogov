@@ -24,15 +24,15 @@ import org.junit.runner.RunWith;
  * @author 70744416353
  */
 @RunWith(CdiTestRunner.class)
-public class NodesTest {
+public class WaysTest {
 
     @Inject
-    private Nodes instance;
+    private Ways instance;
 
     @Inject
     private Auth auth;
 
-    public NodesTest() {
+    public WaysTest() {
     }
 
     @BeforeClass
@@ -154,7 +154,7 @@ public class NodesTest {
         Double rad = 14.0;
         Token token = auth.login();
         Features result = instance.searchByCategoryGroup(category, group, lat, lng, rad, token);
-        assertNotEquals(0, result.getFeatures().size());
+        assertEquals(0, result.getFeatures().size());
     }
 
 }

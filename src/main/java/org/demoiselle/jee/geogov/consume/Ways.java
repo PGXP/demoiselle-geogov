@@ -13,11 +13,11 @@ import org.demoiselle.jee.geogov.security.Token;
  *
  * @author 70744416353
  */
-public class Nodes {
+public class Ways {
 
-    private static final Logger LOG = Logger.getLogger(Nodes.class.getName());
+    private static final Logger LOG = Logger.getLogger(Ways.class.getName());
 
-    private final String service = "api/nodes";
+    private final String service = "api/ways";
 
     @Inject
     private Util util;
@@ -46,7 +46,7 @@ public class Nodes {
      * @param group
      * @return
      */
-    public List<Nodes> getGroups(String group) {
+    public List<Ways> getGroups(String group) {
         return getGroups(group, null);
     }
 
