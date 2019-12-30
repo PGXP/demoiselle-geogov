@@ -3,14 +3,16 @@
 
 ### REPO Maven
 ```JAVA
-<repository>
-   <id>demoiselle-contrib-mvn-repo</id>
-      <url>https://raw.githubusercontent.com/PGXP/demoiselle-geogov/master/mvn-repo/</url>
-      <snapshots>
-          <enabled>true</enabled>
-          <updatePolicy>always</updatePolicy>
-      </snapshots>
-</repository>
+<repositories>
+        <repository>
+            <id>demoiselle-contrib-mvn-repo</id>
+            <url>https://raw.githubusercontent.com/PGXP/demoiselle-geogov/master/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+</repositories>
 ```
 
 ### Dependency Maven
