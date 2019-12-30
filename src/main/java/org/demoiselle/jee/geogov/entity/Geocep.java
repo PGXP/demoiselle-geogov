@@ -19,6 +19,7 @@ public class Geocep implements Serializable {
     private static final Logger LOG = getLogger(Geocep.class.getName());
     private Long id;
     private String cep;
+    private String ibge;
     private String numero;
     private Double latitude;
     private Double longitude;
@@ -115,6 +116,14 @@ public class Geocep implements Serializable {
      */
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
+    }
+
+    public String getIbge() {
+        return ibge;
+    }
+
+    public void setIbge(String ibge) {
+        this.ibge = ibge;
     }
 
     @Override
