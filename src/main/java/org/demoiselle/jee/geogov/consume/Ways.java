@@ -11,7 +11,7 @@ import org.demoiselle.jee.geogov.security.Token;
 
 /**
  *
- * @author 70744416353
+ * @author PauloGladson
  */
 public class Ways {
 

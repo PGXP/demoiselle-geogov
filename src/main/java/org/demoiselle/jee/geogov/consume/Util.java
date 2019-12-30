@@ -37,7 +37,7 @@ import org.demoiselle.jee.geogov.security.Token;
 
 /**
  *
- * @author 70744416353
+ * @author PauloGladson
  */
 @RequestScoped
 public class Util {
@@ -70,6 +70,11 @@ public class Util {
             if (token != null) {
                 connection.setRequestProperty("Authorization", token.getType() + " " + token.getKey());
             }
+
+            if (config.getGatewayKey() != null && !config.getGatewayKey().isEmpty()) {
+                connection.setRequestProperty("x-demoiselle-gateway-token", config.getGatewayKey());
+            }
+
             connection.setDoOutput(true);
             connection.setUseCaches(true);
 

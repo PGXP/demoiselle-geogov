@@ -9,7 +9,7 @@ import static java.util.logging.Logger.getLogger;
 
 /**
  *
- * @author 70744416353
+ * @author PauloGladson
  */
 public class Category {
 

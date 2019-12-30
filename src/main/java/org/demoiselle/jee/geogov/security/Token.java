@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author 70744416353
+ * @author PauloGladson
  */
 public class Token {
 

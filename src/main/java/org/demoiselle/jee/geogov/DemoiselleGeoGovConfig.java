@@ -29,6 +29,8 @@ public class DemoiselleGeoGovConfig implements Serializable {
 
     private String url;
 
+    private String gatewayKey;
+
     private boolean disableTrustCerts;
 
     private Map<String, String> properties;
@@ -111,6 +113,14 @@ public class DemoiselleGeoGovConfig implements Serializable {
      */
     public void setProperties(Map<String, String> properties) {
         this.properties = properties;
+    }
+
+    public String getGatewayKey() {
+        return gatewayKey;
+    }
+
+    public void setGatewayKey(String gatewayKey) {
+        this.gatewayKey = gatewayKey;
     }
 
 }

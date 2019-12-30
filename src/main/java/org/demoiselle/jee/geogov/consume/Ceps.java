@@ -8,20 +8,38 @@ import java.util.logging.Logger;
 import javax.inject.Inject;
 import org.demoiselle.jee.core.exception.DemoiselleException;
 import org.demoiselle.jee.geogov.entity.Cep;
+import org.demoiselle.jee.geogov.pojo.Features;
 import org.demoiselle.jee.geogov.security.Token;
 
 /**
  *
- * @author 70744416353
+ * @author PauloGladson
  */
 public class Ceps {
 
     private static final Logger LOG = Logger.getLogger(Ceps.class.getName());
 
-    private String service = "api/ceps";
+    private String service = "v1/ceps";
 
     @Inject
     private Util util;
+
+    /**
+     *
+     * @return
+     */
+    public Features getMunicipios() {
+
+        String hostSent = service + "/municipio/list";
+        String resposta = util.doGET(hostSent, null);
+
+        if (resposta != null) {
+            return (new Gson().fromJson(resposta, Features.class));
+        } else {
+            throw new DemoiselleException("Serviço indisponível");
+        }
+
+    }
 
     /**
      *
